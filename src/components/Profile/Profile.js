@@ -12,15 +12,15 @@ export const Profile = ({ username, tag, location, avatar, stats: {followers, vi
       </Description>
 
       <StatsList>
-        <StatItem>
+        <StatItem key="followers">
           <StatLabel>Followers</StatLabel>
           <StatValue>{followers}</StatValue>
         </StatItem>
-        <StatItem>
+        <StatItem key="views">
           <StatLabel>Views</StatLabel>
           <StatValue>{views}</StatValue>
         </StatItem>
-        <StatItem>
+        <StatItem key="likes">
           <StatLabel>Likes</StatLabel>
           <StatValue>{likes}</StatValue>
         </StatItem>

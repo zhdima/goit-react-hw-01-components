@@ -9,7 +9,7 @@ export const Description = styled.div`
   background-color: white;
   text-align: center;
   padding: 32px;
-  border: 1px solid darkgrey;
+  border: 1px solid lightgrey;
 `;
 
 export const Avatar = styled.img`
@@ -17,7 +17,7 @@ export const Avatar = styled.img`
   height: 160px;
   border-radius: 50%;
   margin: 0 auto;
-  border: 1px solid darkgrey;
+  border: 1px solid lightgrey;
 `;
 
 export const Name = styled.div`
@@ -40,7 +40,7 @@ export const StatItem = styled.li`
   flex-basis: calc(100% / 3);
   text-align: center;
   background-color: #eeeeee;
-  border: 1px solid darkgrey;
+  border: 1px solid lightgrey;
 `;
 
 export const StatLabel = styled.p`
