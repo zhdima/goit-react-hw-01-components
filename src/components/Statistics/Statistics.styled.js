@@ -2,12 +2,16 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   margin: 80px auto;
-  width: 480px;
+  width: 440px;
 `;
 
 export const Title = styled.h2`
   font-weight: bold;
-  margin-bottom: 16px;
+  padding: 32px 0;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: white;
+  color: grey;
 `;
 
 export const StatsList = styled.ul`
@@ -17,17 +21,20 @@ export const StatsList = styled.ul`
 export const StatItem = styled.li`
   flex-basis: ${props => `calc(100% / ${props.count})`};
   text-align: center;
-  background-color: #eeeeee;
-  border: 1px solid lightgrey;
+  background-color: ${props => getRandomHexColor()};
+  color: white;
 `;
 
 export const StatLabel = styled.p`
   margin-top: 16px;
-  margin-bottom: 4px;
-  color: darkgrey;
+  margin-bottom: 8px;
 `;
 
 export const StatValue = styled.p`
-  font-weight: bold;
+  font-size: 20px;
   margin-bottom: 16px;
 `;
+
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+}
